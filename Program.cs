@@ -15,10 +15,19 @@ namespace CursoCPractica2_Metodos
             //Console.WriteLine("Hello World!");
             MensajeEnPantalla();
             Console.WriteLine("Mensaje desde el Main");
-            MensajeEnPantalla();// Para entender el flujo del programa método-cw-metodo-metodo
+            MensajeEnPantalla();// Para entender el flujo del programa método-Console.WriteLine-metodo-metodo
             MensajeEnPantalla();
+
+            SumaNumerosVal(7, 9); //Segundo método: Suma números por valor
         }
 
+        //Segundo método: Suma números por valor
+
+        static void SumaNumerosVal(int num1, int num2)
+        {
+            Console.WriteLine($"El resultado de la suma es {num1+num2}");
+            
+        }
 
     }
 }
