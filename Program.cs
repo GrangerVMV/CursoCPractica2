@@ -22,6 +22,7 @@ namespace CursoCPractica2_Metodos
 
             Console.WriteLine($"El resultado de la suma con return es {sumaNumeros(5, 4)}"); // Tercer método: suma números y devuelve un valor
 
+            Console.WriteLine($"El resultado de la división con return es {divideNumeros(8,6)}"); // Cuarto método: divide números con return
         }
 
         //Segundo método: Suma números por valor
@@ -38,6 +39,11 @@ namespace CursoCPractica2_Metodos
             return (num1 + num2);
         }
 
+        //Cuarto método: Divide números con return
+        static double divideNumeros(double num1, int num2) {
+            return num1 / num2;
+
+        }
 
 
 
