@@ -23,6 +23,8 @@ namespace CursoCPractica2_Metodos
             Console.WriteLine($"El resultado de la suma con return es {sumaNumeros(5, 4)}"); // Tercer método: suma números y devuelve un valor
 
             Console.WriteLine($"El resultado de la división con return es {divideNumeros(8,6)}"); // Cuarto método: divide números con return
+
+            Console.WriteLine($"El resultado de la multiplicación con operador flecha es {multiplicaNumeros(7,3)}");
         }
 
         //Segundo método: Suma números por valor
@@ -40,12 +42,13 @@ namespace CursoCPractica2_Metodos
         }
 
         //Cuarto método: Divide números con return
-        static double divideNumeros(double num1, int num2) {
+        static double divideNumeros(double num1, int num2) 
+        {
             return num1 / num2;
-
         }
 
-
+        // Quinto método: Multiplica números con operador flecha en vez de return
+        static int multiplicaNumeros(int num1, int num2) => num1 * num2;
 
     }
 }
