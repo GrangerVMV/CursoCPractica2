@@ -26,8 +26,16 @@ namespace CursoCPractica2_Metodos
 
             Console.WriteLine($"El resultado de la multiplicación con operador flecha es {multiplicaNumeros(7,3)}");// Llamada al Quinto método: Multiplica números con operador flecha en vez de return
 
-            Console.WriteLine($"El resultado de la suma con sobrecargas es {Suma(1, 2, 4, 8)}"); // Llamada a Octavo método: Crea varios métodos con elmismo nombre (sobrecargas)
+            Console.WriteLine($"El resultado de la suma con sobrecargas es {Suma(1, 2, 4, 8)}"); // Llamada a Octavo método: Crea varios métodos con el mismo nombre (sobrecargas)
+
+            // Llamada a Noveno método: Genera un método con párametros opcionales previa declaración de variables
+            int valor1 = 7;
+            double valor2 = 5.2;
+            double valor3 = 8.3;
+            Console.WriteLine($"El resultado de la suma con parámetros opcionales es {sumaConParametroOpcional(valor1, valor2)}");            
         }
+
+
 
         // ****************** Métodos ******************
 
@@ -71,7 +79,13 @@ namespace CursoCPractica2_Metodos
         static int Suma(int sumando1, int sumando2) => sumando1 + sumando2;
         static int Suma(int numero1, int numero2, int numero3, int numero4) => numero1 + numero2 + numero3 + numero4;
         static int Suma(int numero1, double numero2) => numero1;
-        
+
+        // Noveno método: Genera un método con párametros opcionales
+        private static double sumaConParametroOpcional(int num1, double num2, double num3 = 0)
+        {
+            return num1 + num2 + num3;
+        }
+
 
      int campoClase1 = 10; // Las variables globales (campos de clase) se pueden usar primero y definir después -> no sigue el flujo de ejecucuón
      int campoClase2 = 4;
